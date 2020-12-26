@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwifteriOS
 
 class ViewController: UIViewController {
     
@@ -15,6 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var sentimentLabel: UILabel!
 
+    let swifter = Swifter(consumerKey: APIKeys().consumerKey, consumerSecret: APIKeys().consumerSecret)
+    
     // MARK:- Methods
     
     /// Tag: viewDidLoad()
